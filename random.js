@@ -1,51 +1,131 @@
 var namespace = "http://www.w3.org/2000/svg"
 
 
+function createRandomScene(){
+    var number = Math.random()
+
+if (number < 0.25){
+    createFirstScene()
+}else if (number < 0.50){
+    createSecondScene()
+}else if (number < 0.75){
+    createThirdScene()
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+    document.querySelector("svg").setAttribute("style","background: url('https://i.ytimg.com/vi/RfrG_20kRrM/maxresdefault.jpg')")
     
-}
 
+    
+    makeRect(39, 21, 889, 450, "white", 1)
+
+makeRect(39, 21, 889, 25, "gray", 1)
+
+makeCircle(52, 33, 10, "red", 1)
+
+makeCircle(80, 33, 10, "yellow", 1)
+
+makeCircle(108, 33, 10, "lime", 1)
+
+makeRect(200, 180, 150, 150, "green", 1)
+
+makeLine(385, 250, 600, 250, "gray", 20, 1)
+
+makeRect(655, 180, 150, 150, "lightblue", 1)
+
+makeText("install", 109, 76, 25, "sans-serif", 1)
+
+makeText("minecraft", 220, 376, 25, "sans-serif", 1)
+
+makeText("applications", 665, 376, 25, "sans-serif", 1)
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    document.querySelector("svg").setAttribute("style","background: url('https://i.ytimg.com/vi/RfrG_20kRrM/maxresdefault.jpg')")
     
-}
+    var number = Math.random()
+    
+    if (number  > 0.65){
+    
+    makeRect(39, 19, 889, 450, "white", 1)
 
+makeRect(39, 19, 889, 25, "gray", 1)
+
+makeCircle(52, 31, 10, "red", 1)
+
+makeCircle(80, 31, 10, "yellow", 1)
+
+makeCircle(108, 31, 10, "lime", 1)
+
+makeText("MOJANG", 373, 315, 100, "sans-serif", "balck", 1)
+
+makeImage("https://qph.ec.quoracdn.net/main-qimg-7607deb0a45b46cd9609bb800a58c9d9", 250, 230, 100, 100, 1)
+
+makeText("NOT RESPONDING!", 70, 75, 25, "sans-serif", 1)
+}else{
+     makeRect(39, 19, 889, 450, "white", 1)
+
+makeRect(39, 19, 889, 25, "gray", 1)
+
+makeCircle(52, 31, 10, "red", 1)
+
+makeCircle(80, 31, 10, "yellow", 1)
+
+makeCircle(108, 31, 10, "lime", 1)
+
+makeText("MOJANG", 373, 315, 100, "sans-serif", "balck", 1)
+
+makeImage("https://qph.ec.quoracdn.net/main-qimg-7607deb0a45b46cd9609bb800a58c9d9", 250, 230, 100, 100, 1)
+}
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    document.querySelector("svg").setAttribute("style","background: url('http://highered.social/wp-content/uploads/2016/02/panic_screen.png')")
+
+makeRect(39, 19, 589, 450, "white", 1)
+
+makeRect(39, 19, 589, 25, "gray", 1)
+
+makeCircle(52, 31, 10, "red", 1)
+
+makeCircle(80, 31, 10, "yellow", 1)
+
+makeCircle(108, 31, 10, "lime", 1)
+
+makeImage("https://i.ytimg.com/vi/ASnPBms599Y/maxresdefault.jpg", 200, 200, 300, 300, 1)
+
+makeText("Your Data is corrupt!", 110, 115, 50, "sans-serif", "black", 1)
+
+makeText("please call 1800-my-apple", 196, 165, 25, "sans-serif", "black", 1)
+
+makeText("or visit http://www.apple.com/support/mac", 213, 225, 15, "sans-serif", "black", 1)
 }
 
 
 
 
 
-// FILL IN THIS FUNCTION!
-// This function is called whenever you press the "Go!" button.
-function createRandomScene() {
-    // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
-    // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
-    // Else, call the function to create your third scene.
-    
-    
-    
-}
 
 
 

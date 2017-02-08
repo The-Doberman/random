@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Tamma");
+
 #button-container {
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    color: white;
+    font-family: Baloo Tamma;
+    display: block;
+}
+p{
+    color: white;
+    text-align: center;
+    display: block;
+}
+body{
+    background-color: black;
 }
